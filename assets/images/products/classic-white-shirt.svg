@@ -1,0 +1,6 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#F8F9FA"/>
+  <rect x="75" y="50" width="150" height="100" fill="white" stroke="#E9ECEF" stroke-width="2" rx="8"/>
+  <text x="150" y="105" text-anchor="middle" dy=".3em" font-family="Arial, sans-serif" font-size="14" fill="#1B263B" font-weight="bold">Classic White</text>
+  <text x="150" y="125" text-anchor="middle" dy=".3em" font-family="Arial, sans-serif" font-size="14" fill="#1B263B" font-weight="bold">Shirt</text>
+</svg>

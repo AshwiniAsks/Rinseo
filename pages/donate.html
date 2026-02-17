@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate/Sell Clothes - Rinseo</title>
+    <meta name="description" content="Give your clothes a second life. Donate or sell your garments and help the environment.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../assets/images/logo/logo.png" alt="Rinseo Logo" class="navbar-logo">
+                </a>
+                <button class="navbar-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="navbar-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="laundry.html">Laundry Service</a></li>
+                    <li><a href="shop.html">Shop & Rent</a></li>
+                    <li><a href="donate.html">Donate/Sell</a></li>
+                    <li><a href="partner.html">Become a Partner</a></li>
+                </ul>
+                <div class="navbar-actions">
+                    <a href="cart.html" class="cart-icon" aria-label="Shopping Cart">🛒<span class="cart-badge">0</span></a>
+                    <button class="btn btn-outline login-btn">Login</button>
+                    <button class="btn btn-primary signup-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Give Your Clothes a Second Life</h1>
+                <p class="hero-subtitle">Donate or sell your unused clothes and help create a sustainable future</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <div class="icon-circle">
+                            <span class="icon">🎁</span>
+                        </div>
+                    </div>
+                    <h3 class="benefit-title">Earn Discounts</h3>
+                    <p class="benefit-description">Get up to 20% off on laundry services when you donate</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <div class="icon-circle">
+                            <span class="icon">💲</span>
+                        </div>
+                    </div>
+                    <h3 class="benefit-title">Get Paid</h3>
+                    <p class="benefit-description">Sell clothes in good condition and earn money</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <div class="icon-circle">
+                            <span class="icon">✨</span>
+                        </div>
+                    </div>
+                    <h3 class="benefit-title">Help Environment</h3>
+                    <p class="benefit-description">Reduce fashion waste and support sustainability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submission Form Section -->
+    <section class="submission-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="form-title">Submit Your Clothes</h2>
+                
+                <form class="donation-form" id="donationForm">
+                    <!-- I want to section -->
+                    <div class="form-section">
+                        <h3>I want to:</h3>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="donate" name="action" value="donate" class="radio-input">
+                                <label for="donate" class="radio-label">
+                                    <div class="radio-content">
+                                        <span class="radio-circle"></span>
+                                        <div class="radio-text">
+                                            <strong>Donate Clothes</strong>
+                                            <p>Get discount coupons for laundry services</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="sell" name="action" value="sell" class="radio-input">
+                                <label for="sell" class="radio-label">
+                                    <div class="radio-content">
+                                        <span class="radio-circle"></span>
+                                        <div class="radio-text">
+                                            <strong>Sell Clothes</strong>
+                                            <p>Sell good for good condition and earn money</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" class="form-input" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber" class="form-label">Phone Number</label>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" class="form-input" placeholder="+1 (555) 123-4567" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pickupAddress" class="form-label">Pickup Address</label>
+                            <textarea id="pickupAddress" name="pickupAddress" class="form-textarea" placeholder="Enter your full address" rows="3" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="quantity" class="form-label">Approximate Quantity (in items or kg)</label>
+                            <input type="text" id="quantity" name="quantity" class="form-input" placeholder="e.g., 10 items or 5 kg" required>
+                        </div>
+                    </div>
+
+                    <!-- Clothing Condition -->
+                    <div class="form-section clothing-condition">
+                        <h3>Clothing Condition</h3>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="excellent" name="condition" value="excellent" class="radio-input">
+                                <label for="excellent" class="radio-label">
+                                    <div class="radio-content">
+                                        <span class="radio-circle"></span>
+                                        <div class="radio-text">
+                                            <strong>Excellent (almost new)</strong>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="good" name="condition" value="good" class="radio-input">
+                                <label for="good" class="radio-label">
+                                    <div class="radio-content">
+                                        <span class="radio-circle"></span>
+                                        <div class="radio-text">
+                                            <strong>Good (condition minor wear)</strong>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="worn" name="condition" value="worn" class="radio-input">
+                                <label for="worn" class="radio-label">
+                                    <div class="radio-content">
+                                        <span class="radio-circle"></span>
+                                        <div class="radio-text">
+                                            <strong>Worn/faded (needs renewal)</strong>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea id="description" name="description" class="form-textarea" placeholder="Describe the type of clothes, colors, sizes, etc." rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary submit-btn">Submit Request</button>
+                </form>
+
+                <!-- What Happens Next Section -->
+                <div class="next-steps" id="nextSteps" style="display: none;">
+                    <h4>✅ What happens next?</h4>
+                    <ul>
+                        <li>We'll contact you within 24 hours</li>
+                        <li>Our team will schedule a convenient pickup time</li>
+                        <li>We'll evaluate your clothes and provide feedback</li>
+                        <li>You'll receive your discount coupons or payment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo/logo.png" alt="Rinseo Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">RINSEO</div>
+                    </div>
+                    <p class="footer-tagline">Artisan Garment Renewal</p>
+                    <p class="footer-motto">"Repairing is better than replacing it. Recycle it."</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="laundry.html">Laundry Service</a></li>
+                        <li><a href="shop.html">Shop & Rent</a></li>
+                        <li><a href="donate.html">Donate/Sell</a></li>
+                        <li><a href="partner.html">Become a Partner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="laundry.html">Wash & Fold</a></li>
+                        <li><a href="laundry.html">Wash & Iron</a></li>
+                        <li><a href="shop.html">Dry Cleaning</a></li>
+                        <li><a href="shop.html">Clothing Rental</a></li>
+                        <li><a href="donate.html">Garment Renewal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p>📍 123 Eco Street, Green City, GC 12345</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>✉️ hello@rinseo.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rinseo - Artisan Garment Renewal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/donate.js"></script>
+</body>
+</html>

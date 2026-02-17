@@ -1,0 +1,7 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#FFF3E0"/>
+  <rect x="60" y="40" width="180" height="120" fill="#FF9800" rx="12"/>
+  <circle cx="150" cy="70" r="15" fill="#FFB74D"/>
+  <text x="150" y="115" text-anchor="middle" dy=".3em" font-family="Arial, sans-serif" font-size="14" fill="white" font-weight="bold">Ethnic Kurta</text>
+  <text x="150" y="135" text-anchor="middle" dy=".3em" font-family="Arial, sans-serif" font-size="14" fill="white" font-weight="bold">Set</text>
+</svg>

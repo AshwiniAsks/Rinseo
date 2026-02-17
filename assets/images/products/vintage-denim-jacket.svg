@@ -1,0 +1,6 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#4A90E2"/>
+  <rect x="50" y="40" width="200" height="120" fill="#2C5282" rx="10"/>
+  <text x="150" y="110" text-anchor="middle" dy=".3em" font-family="Arial, sans-serif" font-size="14" fill="white" font-weight="bold">Vintage Denim</text>
+  <text x="150" y="130" text-anchor="middle" dy=".3em" font-family="Arial, sans-serif" font-size="14" fill="white" font-weight="bold">Jacket</text>
+</svg>

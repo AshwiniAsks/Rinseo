@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop & Rent - Rinseo (Standalone)</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../assets/images/logo/logo.png" alt="Rinseo Logo" class="navbar-logo">
+                </a>
+                <ul class="navbar-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="laundry.html">Laundry Service</a></li>
+                    <li><a href="shop.html">Shop & Rent</a></li>
+                    <li><a href="donate.html">Donate/Sell</a></li>
+                    <li><a href="partner.html">Become a Partner</a></li>
+                </ul>
+                <div class="navbar-actions">
+                    <a href="cart.html" class="cart-icon">🛒<span class="cart-badge">0</span></a>
+                    <button class="btn btn-outline">Login</button>
+                    <button class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Shop Content -->
+    <div class="shop-page">
+        <!-- Hero Section -->
+        <section class="shop-hero">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="heading-primary">Shop Renewed Fashion</h1>
+                    <p class="text-large">Discover beautifully renewed garments at affordable prices. Rent or Buy!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="shop-filters">
+            <div class="container">
+                <div class="filter-container">
+                    <div class="search-filter-row">
+                        <div class="search-section">
+                            <div class="search-bar">
+                                <span class="search-icon">🔍</span>
+                                <input type="text" class="search-input" placeholder="Search for clothes..." id="productSearch">
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown-section">
+                            <select class="category-dropdown" id="categoryDropdown" onchange="filterProducts(this.value)">
+                                <option value="all">All Categories</option>
+                                <option value="formal">Formal</option>
+                                <option value="casual">Casual</option>
+                                <option value="ethnic">Ethnic</option>
+                                <option value="outerwear">Outerwear</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-section">
+            <div class="container">
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Banners -->
+        <section class="feature-banners-section">
+            <div class="container">
+                <div class="feature-banners">
+                    <div class="feature-banner">
+                        <div class="feature-icon">✅</div>
+                        <h3>Quality Assured</h3>
+                        <p>Every item is professionally cleaned and inspected</p>
+                    </div>
+                    <div class="feature-banner">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Flexible Returns</h3>
+                        <p>Easy returns and exchanges within 7 days</p>
+                    </div>
+                    <div class="feature-banner">
+                        <div class="feature-icon">🌱</div>
+                        <h3>Eco-Friendly</h3>
+                        <p>Sustainable fashion choices for a better planet</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Inline product data to avoid CORS issues
+        const products = [
+            {
+                id: "vintage-denim-jacket",
+                name: "Vintage Denim Jacket",
+                category: "casual",
+                image: "../assets/images/products/vintage-denim-jacket.jpg",
+                buyPrice: 2999,
+                rentPrice: 999,
+                condition: "excellent"
+            },
+            {
+                id: "classic-white-shirt",
+                name: "Classic White Shirt",
+                category: "formal",
+                image: "../assets/images/products/classic-white-shirt.jpg",
+                buyPrice: 1499,
+                rentPrice: 499,
+                condition: "like-new"
+            },
+            {
+                id: "ethnic-kurta-set",
+                name: "Ethnic Kurta Set",
+                category: "ethnic",
+                image: "../assets/images/products/ethnic-kurta-set.jpg",
+                buyPrice: 2499,
+                rentPrice: 799,
+                condition: "excellent"
+            },
+            {
+                id: "designer-dress",
+                name: "Designer Dress",
+                category: "formal",
+                image: "../assets/images/products/designer-dress.jpg",
+                buyPrice: 3999,
+                rentPrice: 1299,
+                condition: "excellent"
+            },
+            {
+                id: "casual-tshirt",
+                name: "Casual T-Shirt",
+                category: "casual",
+                image: "../assets/images/products/casual-tshirt.jpg",
+                buyPrice: 799,
+                rentPrice: 299,
+                condition: "excellent"
+            },
+            {
+                id: "formal-blazer",
+                name: "Formal Blazer",
+                category: "formal",
+                image: "../assets/images/products/formal-blazer.jpg",
+                buyPrice: 4999,
+                rentPrice: 1599,
+                condition: "excellent"
+            }
+        ];
+
+        let currentFilter = 'all';
+
+        function createProductCard(product) {
+            const conditionClass = product.condition.replace('-', '-');
+            const conditionText = product.condition === 'like-new' ? 'New' : 
+                                 product.condition.charAt(0).toUpperCase() + product.condition.slice(1);
+
+            return `
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="${product.image}" alt="${product.name}" class="product-image" 
+                             onload="this.style.opacity='1'"
+                             onerror="this.src='../assets/images/products/placeholder.jpg'">
+                        <div class="condition-tag ${conditionClass}">
+                            ${conditionText}
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+                    
+                    <div class="product-info">
+                        <h3 class="product-name">${product.name}</h3>
+                        
+                        <div class="product-pricing">
+                            <div class="price-main">₹${product.buyPrice.toLocaleString()}</div>
+                            <div class="price-secondary">or rent for ₹${product.rentPrice.toLocaleString()}</div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="btn-buy">Buy</button>
+                            <button class="btn-rent">Rent</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderProducts() {
+            const grid = document.getElementById('productsGrid');
+            const filteredProducts = currentFilter === 'all' 
+                ? products 
+                : products.filter(p => p.category === currentFilter);
+            
+            grid.innerHTML = filteredProducts.map(createProductCard).join('');
+        }
+
+        function filterProducts(category) {
+            currentFilter = category;
+            
+            // Update active button
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            renderProducts();
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Loading standalone shop page...');
+            renderProducts();
+            console.log('Products loaded successfully!');
+        });
+
+        // Search functionality
+        document.getElementById('productSearch').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+            const grid = document.getElementById('productsGrid');
+            
+            const filteredProducts = products.filter(product => 
+                product.name.toLowerCase().includes(query) ||
+                product.category.toLowerCase().includes(query)
+            );
+            
+            grid.innerHTML = filteredProducts.map(createProductCard).join('');
+        });
+    </script>
+</body>
+</html>

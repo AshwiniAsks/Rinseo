@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Service - Rinseo</title>
+    <meta name="description" content="Professional laundry services with eco-friendly practices. Book your laundry pickup and delivery.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <!-- Logo -->
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../assets/images/logo/logo.png" alt="Rinseo Logo" class="navbar-logo">
+                </a>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="navbar-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <!-- Navigation Links -->
+                <ul class="navbar-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="laundry.html">Laundry Service</a></li>
+                    <li><a href="shop.html">Shop & Rent</a></li>
+                    <li><a href="donate.html">Donate/Sell</a></li>
+                    <li><a href="partner.html">Become a Partner</a></li>
+                </ul>
+                
+                <!-- Right Side Actions -->
+                <div class="navbar-actions">
+                    <a href="cart.html" class="cart-icon" aria-label="Shopping Cart">
+                        🛒
+                        <span class="cart-badge">0</span>
+                    </a>
+                    <button class="btn btn-outline login-btn">Login</button>
+                    <button class="btn btn-primary signup-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Laundry Service Page Content -->
+    <div class="laundry-page">
+        <!-- Hero Section -->
+        <section class="laundry-hero">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="heading-primary">Professional Laundry Service</h1>
+                    <p class="text-large">Expert care for your garments with convenient pickup and delivery</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Selection -->
+        <section class="service-selection">
+            <div class="container">
+                <div class="laundry-form-container">
+                    <!-- Service Type Selection -->
+                    <div class="form-section">
+                        <h3 class="section-title">Select Service Type</h3>
+                        <div class="service-options">
+                            <div class="service-option">
+                                <input type="radio" id="washOnly" name="serviceType" value="wash" class="service-radio">
+                                <label for="washOnly" class="service-label">
+                                    <div class="service-content">
+                                        <h4>🧺 Wash Only</h4>
+                                        <p>Professional washing with eco-friendly detergents</p>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="service-option">
+                                <input type="radio" id="washIron" name="serviceType" value="wash-iron" class="service-radio" checked>
+                                <label for="washIron" class="service-label">
+                                    <div class="service-content">
+                                        <h4>👔 Wash + Iron <span class="popular-badge">Popular</span></h4>
+                                        <p>Complete service with professional ironing</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Table -->
+                    <div class="form-section">
+                        <h3 class="section-title">Pricing</h3>
+                        <div class="pricing-table-container">
+                            <table class="pricing-table">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Wash Only</th>
+                                        <th>Wash + Iron</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Shirt</td>
+                                        <td>₹25</td>
+                                        <td>₹40</td>
+                                    </tr>
+                                    <tr>
+                                        <td>T-Shirt</td>
+                                        <td>₹20</td>
+                                        <td>₹35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pants</td>
+                                        <td>₹35</td>
+                                        <td>₹55</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jeans</td>
+                                        <td>₹40</td>
+                                        <td>₹60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ethnic Wear</td>
+                                        <td>₹50</td>
+                                        <td>₹80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delicate Clothes</td>
+                                        <td>₹60</td>
+                                        <td>₹90</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <div class="bulk-pricing">
+                                <h4>Per Kg Pricing</h4>
+                                <div class="bulk-options">
+                                    <div class="bulk-option">
+                                        <span class="bulk-label">Wash Only</span>
+                                        <span class="bulk-price">₹30/kg</span>
+                                    </div>
+                                    <div class="bulk-option">
+                                        <span class="bulk-label">Wash + Iron</span>
+                                        <span class="bulk-price">₹45/kg</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Book Pickup -->
+                    <div class="form-section">
+                        <h3 class="section-title">Book Pickup</h3>
+                        <div class="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Select Pickup Date</label>
+                                    <div class="calendar-container">
+                                        <div class="calendar-header">
+                                            <button type="button" class="calendar-nav" id="prevMonth">‹</button>
+                                            <span class="calendar-month">October 2025</span>
+                                            <button type="button" class="calendar-nav" id="nextMonth">›</button>
+                                        </div>
+                                        <div class="calendar-grid">
+                                            <div class="calendar-weekdays">
+                                                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                                            </div>
+                                            <div class="calendar-days" id="calendarDays">
+                                                <!-- Calendar days will be generated by JavaScript -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Pickup Time</label>
+                                    <select class="form-input" id="pickupTime">
+                                        <option value="">Select time slot</option>
+                                        <option value="09:00-11:00">9:00 AM - 11:00 AM</option>
+                                        <option value="11:00-13:00">11:00 AM - 1:00 PM</option>
+                                        <option value="13:00-15:00">1:00 PM - 3:00 PM</option>
+                                        <option value="15:00-17:00">3:00 PM - 5:00 PM</option>
+                                        <option value="17:00-19:00">5:00 PM - 7:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Pickup Address</label>
+                                <textarea class="form-textarea" id="pickupAddress" placeholder="Enter your full address..." rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-input" id="phoneNumber" placeholder="+1 (555) 123-4567">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Special Instructions (Optional)</label>
+                                <textarea class="form-textarea" id="specialInstructions" placeholder="Any specific requirements..." rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Confirm Booking Button -->
+                    <div class="form-section">
+                        <button type="button" class="btn btn-primary btn-large confirm-booking-btn">
+                            Confirm Booking
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Rinseo Branding -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo/logo.png" alt="Rinseo Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">RINSEO</div>
+                    </div>
+                    <p class="footer-tagline">Artisan Garment Renewal</p>
+                    <p class="footer-motto">"Repairing is better than replacing it. Recycle it."</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="laundry.html">Laundry Service</a></li>
+                        <li><a href="shop.html">Shop & Rent</a></li>
+                        <li><a href="donate.html">Donate/Sell</a></li>
+                        <li><a href="partner.html">Become a Partner</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="laundry.html">Wash & Fold</a></li>
+                        <li><a href="laundry.html">Wash & Iron</a></li>
+                        <li><a href="shop.html">Dry Cleaning</a></li>
+                        <li><a href="shop.html">Clothing Rental</a></li>
+                        <li><a href="donate.html">Garment Renewal</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Us -->
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p>📍 123 Eco Street, Green City, GC 12345</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>✉️ hello@rinseo.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rinseo - Artisan Garment Renewal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/laundry.js"></script>
+</body>
+</html>

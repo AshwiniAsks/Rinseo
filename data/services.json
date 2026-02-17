@@ -1,0 +1,138 @@
+{
+  "services": [
+    {
+      "id": "wash-shirt",
+      "name": "Shirt",
+      "category": "wash",
+      "pricePerItem": 25,
+      "pricePerKg": null,
+      "description": "Regular wash for shirts"
+    },
+    {
+      "id": "wash-iron-shirt",
+      "name": "Shirt",
+      "category": "wash-iron",
+      "pricePerItem": 40,
+      "pricePerKg": null,
+      "description": "Wash and iron service for shirts"
+    },
+    {
+      "id": "wash-trousers",
+      "name": "Trousers",
+      "category": "wash",
+      "pricePerItem": 30,
+      "pricePerKg": null,
+      "description": "Regular wash for trousers"
+    },
+    {
+      "id": "wash-iron-trousers",
+      "name": "Trousers",
+      "category": "wash-iron",
+      "pricePerItem": 50,
+      "pricePerKg": null,
+      "description": "Wash and iron service for trousers"
+    },
+    {
+      "id": "wash-tshirt",
+      "name": "T-Shirt",
+      "category": "wash",
+      "pricePerItem": 20,
+      "pricePerKg": null,
+      "description": "Regular wash for t-shirts"
+    },
+    {
+      "id": "wash-iron-tshirt",
+      "name": "T-Shirt",
+      "category": "wash-iron",
+      "pricePerItem": 35,
+      "pricePerKg": null,
+      "description": "Wash and iron service for t-shirts"
+    },
+    {
+      "id": "wash-jeans",
+      "name": "Jeans",
+      "category": "wash",
+      "pricePerItem": 35,
+      "pricePerKg": null,
+      "description": "Regular wash for jeans"
+    },
+    {
+      "id": "wash-iron-jeans",
+      "name": "Jeans",
+      "category": "wash-iron",
+      "pricePerItem": 55,
+      "pricePerKg": null,
+      "description": "Wash and iron service for jeans"
+    },
+    {
+      "id": "wash-dress",
+      "name": "Dress",
+      "category": "wash",
+      "pricePerItem": 45,
+      "pricePerKg": null,
+      "description": "Regular wash for dresses"
+    },
+    {
+      "id": "wash-iron-dress",
+      "name": "Dress",
+      "category": "wash-iron",
+      "pricePerItem": 70,
+      "pricePerKg": null,
+      "description": "Wash and iron service for dresses"
+    },
+    {
+      "id": "wash-saree",
+      "name": "Saree",
+      "category": "wash",
+      "pricePerItem": 50,
+      "pricePerKg": null,
+      "description": "Regular wash for sarees"
+    },
+    {
+      "id": "wash-iron-saree",
+      "name": "Saree",
+      "category": "wash-iron",
+      "pricePerItem": 80,
+      "pricePerKg": null,
+      "description": "Wash and iron service for sarees"
+    },
+    {
+      "id": "wash-kurta",
+      "name": "Kurta",
+      "category": "wash",
+      "pricePerItem": 40,
+      "pricePerKg": null,
+      "description": "Regular wash for kurtas"
+    },
+    {
+      "id": "wash-iron-kurta",
+      "name": "Kurta",
+      "category": "wash-iron",
+      "pricePerItem": 65,
+      "pricePerKg": null,
+      "description": "Wash and iron service for kurtas"
+    },
+    {
+      "id": "wash-bulk",
+      "name": "Bulk Laundry",
+      "category": "wash",
+      "pricePerItem": null,
+      "pricePerKg": 30,
+      "description": "Regular wash service per kg"
+    },
+    {
+      "id": "wash-iron-bulk",
+      "name": "Bulk Laundry",
+      "category": "wash-iron",
+      "pricePerItem": null,
+      "pricePerKg": 45,
+      "description": "Wash and iron service per kg"
+    }
+  ],
+  "pricing_notes": [
+    "Free pickup and delivery for orders above ₹200",
+    "Express service available for 50% extra charge",
+    "Dry cleaning services available on request",
+    "Eco-friendly detergents used for all services"
+  ]
+}

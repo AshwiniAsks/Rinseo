@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": "vintage-denim-jacket",
+      "name": "Vintage Denim Jacket",
+      "category": "casual",
+      "images": ["assets/images/products/vintage-denim-jacket.svg"],
+      "buyPrice": 2999,
+      "rentPrice": 999,
+      "condition": "excellent",
+      "description": "Classic vintage denim jacket with unique detailing",
+      "sizes": ["S", "M", "L", "XL"],
+      "available": true
+    },
+    {
+      "id": "classic-white-shirt",
+      "name": "Classic White Shirt",
+      "category": "formal",
+      "images": ["assets/images/products/classic-white-shirt.svg"],
+      "buyPrice": 1499,
+      "rentPrice": 499,
+      "condition": "like-new",
+      "description": "Crisp white shirt perfect for professional settings",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "available": true
+    },
+    {
+      "id": "ethnic-kurta-set",
+      "name": "Ethnic Kurta Set",
+      "category": "ethnic",
+      "images": ["assets/images/products/ethnic-kurta-set.svg"],
+      "buyPrice": 2499,
+      "rentPrice": 799,
+      "condition": "excellent",
+      "description": "Traditional kurta set for festive occasions",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "available": true
+    },
+    {
+      "id": "designer-dress",
+      "name": "Designer Dress",
+      "category": "formal",
+      "images": ["assets/images/products/designer-dress.svg"],
+      "buyPrice": 3999,
+      "rentPrice": 1299,
+      "condition": "excellent",
+      "description": "Elegant designer dress for special events",
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "available": true
+    },
+    {
+      "id": "casual-tshirt",
+      "name": "Casual T-Shirt",
+      "category": "casual",
+      "images": ["assets/images/products/casual-tshirt.svg"],
+      "buyPrice": 799,
+      "rentPrice": 299,
+      "condition": "excellent",
+      "description": "Comfortable casual t-shirt for everyday wear",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "available": true
+    },
+    {
+      "id": "formal-blazer",
+      "name": "Formal Blazer",
+      "category": "formal",
+      "images": ["assets/images/products/formal-blazer.svg"],
+      "buyPrice": 4999,
+      "rentPrice": 1599,
+      "condition": "excellent",
+      "description": "Professional blazer for business meetings",
+      "sizes": ["S", "M", "L", "XL"],
+      "available": true
+    },
+    {
+      "id": "summer-dress",
+      "name": "Summer Dress",
+      "category": "casual",
+      "images": ["assets/images/products/placeholder.svg"],
+      "buyPrice": 1899,
+      "rentPrice": 599,
+      "condition": "like-new",
+      "description": "Light and breezy summer dress",
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "available": true
+    },
+    {
+      "id": "party-wear-top",
+      "name": "Party Wear Top",
+      "category": "formal",
+      "images": ["assets/images/products/placeholder.svg"],
+      "buyPrice": 2299,
+      "rentPrice": 699,
+      "condition": "excellent",
+      "description": "Stylish top perfect for parties and events",
+      "sizes": ["S", "M", "L", "XL"],
+      "available": true
+    },
+    {
+      "id": "winter-coat",
+      "name": "Winter Coat",
+      "category": "outerwear",
+      "images": ["assets/images/products/placeholder.svg"],
+      "buyPrice": 3599,
+      "rentPrice": 1199,
+      "condition": "good",
+      "description": "Warm winter coat for cold weather",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "available": true
+    },
+    {
+      "id": "ethnic-lehenga",
+      "name": "Ethnic Lehenga",
+      "category": "ethnic",
+      "images": ["assets/images/products/placeholder.svg"],
+      "buyPrice": 8999,
+      "rentPrice": 2999,
+      "condition": "like-new",
+      "description": "Beautiful lehenga for weddings and celebrations",
+      "sizes": ["XS", "S", "M", "L"],
+      "available": true
+    },
+    {
+      "id": "business-suit",
+      "name": "Business Suit",
+      "category": "formal",
+      "images": ["assets/images/products/placeholder.svg"],
+      "buyPrice": 6999,
+      "rentPrice": 2299,
+      "condition": "excellent",
+      "description": "Complete business suit for professional occasions",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "available": true
+    },
+    {
+      "id": "casual-hoodie",
+      "name": "Casual Hoodie",
+      "category": "casual",
+      "images": ["assets/images/products/placeholder.svg"],
+      "buyPrice": 1799,
+      "rentPrice": 599,
+      "condition": "good",
+      "description": "Comfortable hoodie for relaxed days",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "available": true
+    }
+  ]
+}

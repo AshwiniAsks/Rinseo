@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Partner - Rinseo</title>
+    <meta name="description" content="Join the Rinseo network as a partner. Grow your business with full support and brand recognition.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../assets/images/logo/logo.png" alt="Rinseo Logo" class="navbar-logo">
+                </a>
+                <button class="navbar-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="navbar-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="laundry.html">Laundry Service</a></li>
+                    <li><a href="shop.html">Shop & Rent</a></li>
+                    <li><a href="donate.html">Donate/Sell</a></li>
+                    <li><a href="partner.html">Become a Partner</a></li>
+                </ul>
+                <div class="navbar-actions">
+                    <a href="cart.html" class="cart-icon" aria-label="Shopping Cart">🛒<span class="cart-badge">0</span></a>
+                    <button class="btn btn-outline login-btn">Login</button>
+                    <button class="btn btn-primary signup-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Become a Rinseo Partner</h1>
+                <p class="hero-subtitle">Join our network and help expand sustainable garment care in your community</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <div class="icon-circle">
+                            <span class="icon">📈</span>
+                        </div>
+                    </div>
+                    <h3 class="benefit-title">Growing Business</h3>
+                    <p class="benefit-description">Tap into the fast-growing sustainable fashion market</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <div class="icon-circle">
+                            <span class="icon">🤝</span>
+                        </div>
+                    </div>
+                    <h3 class="benefit-title">Full Support</h3>
+                    <p class="benefit-description">Comprehensive training and ongoing support to ensure success</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <div class="icon-circle">
+                            <span class="icon">🏆</span>
+                        </div>
+                    </div>
+                    <h3 class="benefit-title">Brand Recognition</h3>
+                    <p class="benefit-description">Leverage our established brand and marketing materials</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <div class="icon-circle">
+                            <span class="icon">🌍</span>
+                        </div>
+                    </div>
+                    <h3 class="benefit-title">Community Impact</h3>
+                    <p class="benefit-description">Make a positive environmental and social impact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Application Form Section -->
+    <section class="submission-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="form-title">Partner Application</h2>
+                
+                <form class="partner-form" id="partnerForm">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" class="form-input" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber" class="form-label">Phone Number</label>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" class="form-input" placeholder="+1 (555) 123-4567" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="businessName" class="form-label">Business Name (if applicable)</label>
+                                <input type="text" id="businessName" name="businessName" class="form-input" placeholder="Your Business Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="cityLocation" class="form-label">City/Location</label>
+                                <input type="text" id="cityLocation" name="cityLocation" class="form-input" placeholder="Mumbai" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience and Motivation -->
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label for="experience" class="form-label">Previous Experience in Laundry/Fashion Industry</label>
+                            <textarea id="experience" name="experience" class="form-textarea" placeholder="Tell us about your relevant experience..." rows="4"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="motivation" class="form-label">Why do you want to partner with Rinseo?</label>
+                            <textarea id="motivation" name="motivation" class="form-textarea" placeholder="Share your motivation and vision..." rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="investment" class="form-label">Investment Capacity (Optional)</label>
+                            <input type="text" id="investment" name="investment" class="form-input" placeholder="e.g. ₹50,000 - ₹100,000">
+                        </div>
+                    </div>
+
+                    <!-- What We Offer Section -->
+                    <div class="what-we-offer">
+                        <h4>What We Offer:</h4>
+                        <ul>
+                            <li>Comprehensive business training programs</li>
+                            <li>Marketing and promotional support</li>
+                            <li>Technology platform and management tools</li>
+                            <li>Operational support and guidance</li>
+                            <li>Quality control systems</li>
+                        </ul>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary submit-btn" style="
+                        width: 100%;
+                        margin-top: 1.5rem;
+                        font-size: 1.1rem;
+                        padding: 14px 24px;
+                        display: block;
+                        background: linear-gradient(to right, #34D17C, #4EBEEF);
+                        color: white;
+                        border: none;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        text-align: center;
+                        box-shadow: 0 2px 8px rgba(52, 209, 124, 0.3);
+                        transition: all 0.2s ease;
+                    ">Submit Application</button>
+                    
+                    <p class="form-note" style="
+                        text-align: center;
+                        color: #6C757D;
+                        font-size: 0.9rem;
+                        margin-top: 1rem;
+                        font-style: italic;
+                    ">We'll review your application and contact you within 5-7 business days</p>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo/logo.png" alt="Rinseo Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">RINSEO</div>
+                    </div>
+                    <p class="footer-tagline">Artisan Garment Renewal</p>
+                    <p class="footer-motto">"Repairing is better than replacing it. Recycle it."</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="laundry.html">Laundry Service</a></li>
+                        <li><a href="shop.html">Shop & Rent</a></li>
+                        <li><a href="donate.html">Donate/Sell</a></li>
+                        <li><a href="partner.html">Become a Partner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="laundry.html">Wash & Fold</a></li>
+                        <li><a href="laundry.html">Wash & Iron</a></li>
+                        <li><a href="shop.html">Dry Cleaning</a></li>
+                        <li><a href="shop.html">Clothing Rental</a></li>
+                        <li><a href="donate.html">Garment Renewal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p>📍 123 Eco Street, Green City, GC 12345</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>✉️ hello@rinseo.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rinseo - Artisan Garment Renewal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/partner.js"></script>
+</body>
+</html>

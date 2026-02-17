@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up - Rinseo</title>
+    <meta name="description" content="Login or create an account to access personalized Rinseo services.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="assets/images/logo/logo.png" alt="Rinseo Logo" class="navbar-logo">
+                </a>
+                <button class="navbar-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="navbar-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="laundry.html">Laundry Service</a></li>
+                    <li><a href="shop.html">Shop & Rent</a></li>
+                    <li><a href="donate.html">Donate/Sell</a></li>
+                    <li><a href="partner.html">Become a Partner</a></li>
+                </ul>
+                <div class="navbar-actions">
+                    <a href="cart.html" class="cart-icon" aria-label="Shopping Cart">🛒<span class="cart-badge">0</span></a>
+                    <button class="btn btn-outline login-btn">Login</button>
+                    <button class="btn btn-primary signup-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Auth Page Content -->
+    <div class="auth-page">
+        <div class="container">
+            <!-- Back to Home Link -->
+            <a href="../index.html" class="back-link">
+                ← Back to Home
+            </a>
+            
+            <!-- Auth Container -->
+            <div class="auth-container">
+                <!-- Logo and Branding -->
+                <div class="auth-header">
+                    <div class="auth-logo-container">
+                        <img src="assets/images/logo/logo.png" alt="Rinseo Logo" class="auth-logo-img">
+                    </div>
+                    <h1 class="auth-title">Welcome to Rinseo</h1>
+                    <p class="auth-tagline">Artisan Garment Renewal</p>
+                </div>
+                
+                <!-- Tab Navigation -->
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Login</button>
+                    <button class="auth-tab" data-tab="signup">Sign Up</button>
+                </div>
+                
+                <!-- Login Form -->
+                <div id="loginTab" class="auth-tab-content active">
+                    <form id="loginForm" class="auth-form">
+                        <div class="form-group">
+                            <label class="form-label" for="loginEmail">Email</label>
+                            <input type="email" id="loginEmail" name="email" class="form-input" placeholder="your@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" name="password" class="form-input" placeholder="••••••••" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large auth-submit-btn">Login</button>
+                        
+                        <div class="auth-links">
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Sign Up Form -->
+                <div id="signupTab" class="auth-tab-content">
+                    <form id="signupForm" class="auth-form">
+                        <div class="form-group">
+                            <label class="form-label" for="signupName">Full Name</label>
+                            <input type="text" id="signupName" name="name" class="form-input" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="signupEmail">Email</label>
+                            <input type="email" id="signupEmail" name="email" class="form-input" placeholder="your@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="signupPassword">Password</label>
+                            <input type="password" id="signupPassword" name="password" class="form-input" placeholder="••••••••" required minlength="6">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large auth-submit-btn">Create Account</button>
+                        
+                        <div class="auth-terms">
+                            <p>By signing up, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo/logo.png" alt="Rinseo Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">RINSEO</div>
+                    </div>
+                    <p class="footer-tagline">Artisan Garment Renewal</p>
+                    <p class="footer-motto">"Repairing is better than replacing it. Recycle it."</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="laundry.html">Laundry Service</a></li>
+                        <li><a href="shop.html">Shop & Rent</a></li>
+                        <li><a href="donate.html">Donate/Sell</a></li>
+                        <li><a href="partner.html">Become a Partner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="laundry.html">Wash & Fold</a></li>
+                        <li><a href="laundry.html">Wash & Iron</a></li>
+                        <li><a href="shop.html">Dry Cleaning</a></li>
+                        <li><a href="shop.html">Clothing Rental</a></li>
+                        <li><a href="donate.html">Garment Renewal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p>📍 123 Eco Street, Green City, GC 12345</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>✉️ hello@rinseo.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rinseo - Artisan Garment Renewal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/auth.js"></script>
+</body>
+</html>

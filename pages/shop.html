@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop & Rent - Rinseo</title>
+    <meta name="description" content="Browse and rent or buy renewed garments. Quality assured, eco-friendly clothing options.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../assets/images/logo/logo.png" alt="Rinseo Logo" class="navbar-logo">
+                </a>
+                <button class="navbar-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="navbar-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="laundry.html">Laundry Service</a></li>
+                    <li><a href="shop.html">Shop & Rent</a></li>
+                    <li><a href="donate.html">Donate/Sell</a></li>
+                    <li><a href="partner.html">Become a Partner</a></li>
+                </ul>
+                <div class="navbar-actions">
+                    <a href="cart.html" class="cart-icon" aria-label="Shopping Cart">🛒<span class="cart-badge">0</span></a>
+                    <button class="btn btn-outline login-btn">Login</button>
+                    <button class="btn btn-primary signup-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Shop & Rent Page Content -->
+    <div class="shop-page">
+        <!-- Hero Section -->
+        <section class="shop-hero">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="heading-primary">Shop Renewed Fashion</h1>
+                    <p class="text-large">Discover beautifully renewed garments at affordable prices. Rent or Buy!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="shop-filters">
+            <div class="container">
+                <div class="filter-container">
+                    <div class="search-filter-row">
+                        <div class="search-section">
+                            <div class="search-bar">
+                                <span class="search-icon">🔍</span>
+                                <input type="text" class="search-input" placeholder="Search for clothes..." id="productSearch">
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown-section">
+                            <select class="category-dropdown" id="categoryDropdown">
+                                <option value="all">All Categories</option>
+                                <option value="formal">Formal</option>
+                                <option value="casual">Casual</option>
+                                <option value="ethnic">Ethnic</option>
+                                <option value="outerwear">Outerwear</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Products Grid -->
+        <section class="products-section">
+            <div class="container">
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+                
+                <div class="loading-state" id="loadingState" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Loading products...</p>
+                </div>
+                
+                <div class="no-results" id="noResults" style="display: none;">
+                    <p>No products found matching your criteria.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Banners -->
+        <section class="feature-banners-section">
+            <div class="container">
+                <div class="feature-banners">
+                    <div class="feature-banner">
+                        <div class="feature-icon">✅</div>
+                        <h3>Quality Assured</h3>
+                        <p>Every item is professionally cleaned and inspected</p>
+                    </div>
+                    
+                    <div class="feature-banner">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Flexible Returns</h3>
+                        <p>Easy returns and exchanges within 7 days</p>
+                    </div>
+                    
+                    <div class="feature-banner">
+                        <div class="feature-icon">🌱</div>
+                        <h3>Eco-Friendly</h3>
+                        <p>Sustainable fashion choices for a better planet</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo/logo.png" alt="Rinseo Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">RINSEO</div>
+                    </div>
+                    <p class="footer-tagline">Artisan Garment Renewal</p>
+                    <p class="footer-motto">"Repairing is better than replacing it. Recycle it."</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="laundry.html">Laundry Service</a></li>
+                        <li><a href="shop.html">Shop & Rent</a></li>
+                        <li><a href="donate.html">Donate/Sell</a></li>
+                        <li><a href="partner.html">Become a Partner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="laundry.html">Wash & Fold</a></li>
+                        <li><a href="laundry.html">Wash & Iron</a></li>
+                        <li><a href="shop.html">Dry Cleaning</a></li>
+                        <li><a href="shop.html">Clothing Rental</a></li>
+                        <li><a href="donate.html">Garment Renewal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p>📍 123 Eco Street, Green City, GC 12345</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>✉️ hello@rinseo.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rinseo - Artisan Garment Renewal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/shop.js"></script>
+    
+    <!-- Emergency fallback test -->
+    <script>
+        // Emergency test to force products to show
+        setTimeout(async function() {
+            console.log('🚨 Emergency test running...');
+            
+            const grid = document.getElementById('productsGrid');
+            if (!grid) {
+                console.error('❌ Grid not found in emergency test');
+                return;
+            }
+            
+            // If grid is still empty after 3 seconds, force load products
+            if (grid.innerHTML.trim() === '' || grid.innerHTML.includes('Products will be loaded dynamically')) {
+                console.log('🔧 Grid is empty, forcing product load...');
+                
+                try {
+                    // Inline product data to avoid CORS issues
+                    const data = {
+                        "products": [
+                            {
+                                "id": "vintage-denim-jacket",
+                                "name": "Vintage Denim Jacket",
+                                "category": "casual",
+                                "images": ["../assets/images/products/vintage-denim-jacket.jpg"],
+                                "buyPrice": 2999,
+                                "rentPrice": 999,
+                                "condition": "excellent"
+                            },
+                            {
+                                "id": "classic-white-shirt",
+                                "name": "Classic White Shirt",
+                                "category": "formal",
+                                "images": ["../assets/images/products/classic-white-shirt.jpg"],
+                                "buyPrice": 1499,
+                                "rentPrice": 499,
+                                "condition": "like-new"
+                            },
+                            {
+                                "id": "ethnic-kurta-set",
+                                "name": "Ethnic Kurta Set",
+                                "category": "ethnic",
+                                "images": ["../assets/images/products/ethnic-kurta-set.jpg"],
+                                "buyPrice": 2499,
+                                "rentPrice": 799,
+                                "condition": "excellent"
+                            },
+                            {
+                                "id": "designer-dress",
+                                "name": "Designer Dress",
+                                "category": "formal",
+                                "images": ["../assets/images/products/designer-dress.jpg"],
+                                "buyPrice": 3999,
+                                "rentPrice": 1299,
+                                "condition": "excellent"
+                            },
+                            {
+                                "id": "casual-tshirt",
+                                "name": "Casual T-Shirt",
+                                "category": "casual",
+                                "images": ["../assets/images/products/casual-tshirt.jpg"],
+                                "buyPrice": 799,
+                                "rentPrice": 299,
+                                "condition": "excellent"
+                            },
+                            {
+                                "id": "formal-blazer",
+                                "name": "Formal Blazer",
+                                "category": "formal",
+                                "images": ["../assets/images/products/formal-blazer.jpg"],
+                                "buyPrice": 4999,
+                                "rentPrice": 1599,
+                                "condition": "excellent"
+                            }
+                        ]
+                    };
+                    
+                    const testHTML = data.products.slice(0, 3).map(product => `
+                        <div style="border: 1px solid #ddd; padding: 1rem; margin: 1rem; text-align: center; background: white; border-radius: 8px;">
+                            <img src="../${product.images[0]}" alt="${product.name}" 
+                                 style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;"
+                                 onerror="this.src='../assets/images/products/placeholder.jpg'">
+                            <h3 style="margin: 1rem 0; color: #1B263B;">${product.name}</h3>
+                            <p style="color: #6C757D;">Buy: ₹${product.buyPrice} | Rent: ₹${product.rentPrice}</p>
+                            <div style="margin-top: 1rem;">
+                                <button style="background: linear-gradient(to right, #34D17C, #4EBEEF); color: white; border: none; padding: 8px 16px; border-radius: 4px; margin: 0 4px;">Buy</button>
+                                <button style="background: transparent; color: #34D17C; border: 2px solid #34D17C; padding: 6px 16px; border-radius: 4px; margin: 0 4px;">Rent</button>
+                            </div>
+                        </div>
+                    `).join('');
+                    
+                    grid.innerHTML = testHTML;
+                    console.log('✅ Emergency products loaded!');
+                    
+                } catch (error) {
+                    console.error('❌ Emergency test failed:', error);
+                    grid.innerHTML = '<div style="text-align: center; padding: 2rem; color: red;">Failed to load products: ' + error.message + '</div>';
+                }
+            } else {
+                console.log('✅ Products already loaded, emergency test not needed');
+            }
+        }, 3000);
+    </script>
+</body>
+</html>

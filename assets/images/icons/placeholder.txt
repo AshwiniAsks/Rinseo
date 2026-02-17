@@ -1,0 +1,23 @@
+# Icons Directory
+
+This directory will contain UI icons and graphics for the Rinseo website.
+
+Icons needed:
+- Shopping cart icon
+- User/profile icon
+- Search icon
+- Menu/hamburger icon
+- Social media icons (Facebook, Twitter, Instagram, LinkedIn)
+- Service icons (washing machine, delivery truck, eco-friendly, etc.)
+- Feature icons (quality assured, flexible returns, etc.)
+
+Icons can be:
+- SVG files for scalability
+- PNG files for complex graphics
+- Icon fonts (Font Awesome, etc.)
+
+All icons should follow the Rinseo color scheme:
+- Primary Green: #34D17C
+- Primary Blue: #4EBEEF
+- Navy Dark: #1B263B
+- Text Secondary: #6C757D
